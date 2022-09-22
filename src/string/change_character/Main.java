@@ -16,6 +16,11 @@ public class Main {
         System.out.print(main.asciiSolution(word));
     }
 
+    public void mission(){
+        /*1. 대소문자가 혼용된 단어를 입력받아라 - aAzZasdfWEQfqwdfasdf*/
+        /*2. 대문자는 소문자로, 소문자는 대문자로 변형하여 출력하라 - AaZzASDFweqFQWDFASDF*/
+    }
+
     public String solution(String word) {
         StringBuilder result = new StringBuilder();
         for (char c : word.toCharArray()) {
