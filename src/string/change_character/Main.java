@@ -17,7 +17,7 @@ public class Main {
     }
 
     public String solution(String word) {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         for (char c : word.toCharArray()) {
             result.append(Character.isUpperCase(c)
                     ? Character.toLowerCase(c)
@@ -27,7 +27,7 @@ public class Main {
     }
 
     public String asciiSolution(String word) {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         for (char c : word.toCharArray()) {
             if (ASCII_LOWER_CASE_MIN <= c && c <= ASCII_LOWER_CASE_MAX) {
                 result.append((char) (c + ASCII_CASE_GAP));
