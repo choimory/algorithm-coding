@@ -33,7 +33,7 @@
 
 ## DFS, BFS
 
-- ㅁㅁ 
+- 합이 같은 부분집합 
 
 ## Greedy Algorithm
 
@@ -51,3 +51,14 @@
 # 채점사이트
 
 - [채점 사이트](https://cote.inflearn.com/contest/10/problems)
+
+# 주요 항목
+
+- 자료구조
+- 문자열
+- DFS BFS
+- Deque
+- Priority Queue
+- Binary Search
+- Greedy Algorithm
+- Dynamic Programming
