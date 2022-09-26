@@ -2,6 +2,9 @@ package string.change_character;
 
 import java.util.Scanner;
 
+/**
+ * 대소문자 변환하기
+ */
 public class Main {
     private static final int ASCII_LOWER_CASE_MIN = 65;
     private static final int ASCII_LOWER_CASE_MAX = 90;

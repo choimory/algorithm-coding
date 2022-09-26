@@ -2,6 +2,9 @@ package string.reverse_word;
 
 import java.util.Scanner;
 
+/**
+ * 단어 뒤집기
+ */
 public class Main {
     public static void main(String[] args){
         Main main = new Main();

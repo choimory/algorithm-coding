@@ -3,6 +3,9 @@ package string.find_character;
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * 문자열 찾기
+ */
 public class Main {
     public static void main(String[] args){
         Main main = new Main();

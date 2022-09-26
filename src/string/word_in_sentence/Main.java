@@ -2,6 +2,9 @@ package string.word_in_sentence;
 
 import java.util.Scanner;
 
+/**
+ * 문장 속 가장 긴 단어 찾기
+ */
 public class Main {
     public static void main(String[] args){
         Main main = new Main();
