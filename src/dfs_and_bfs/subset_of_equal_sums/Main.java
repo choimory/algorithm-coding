@@ -23,21 +23,40 @@ public class Main {
         /*첫번째줄에 YES or NO를 출력한다*/
     }
 
+    public static String answer = "NO";
+    public static int size = 0;
+    public static int total = 0;
+    public boolean flag = false;
+
     public static void main(String[] args){
+        Main main = new Main();
         Scanner scanner = new Scanner(System.in);
 
-        int size = scanner.nextInt();
+        size = scanner.nextInt();
         scanner.nextLine();
         List<Integer> elements = Arrays.stream(scanner.nextLine().split(" "))
                 .map(Integer::parseInt)
                 .toList();
+        total = elements.stream()
+                .reduce(Integer::sum)
+                .orElse(0);
 
-        System.out.println(solution(size, elements));
+        main.solution(0, 0, elements);
+        System.out.print(answer);
+
     }
 
-    public static String solution(int count, List<Integer> elements){
-        boolean flag = false;
+    public void solution(int level, int sum, List<Integer> elements){
+        if( flag || (sum > total/2) ) return;
 
-        return flag ? "YES" : "NO";
+        if(level == size){
+            if((total - sum) == sum){
+                answer = "YES";
+                flag = true;
+            }
+        } else {
+           solution(level + 1, sum + elements.get(level), elements);
+           solution(level + 1, sum, elements);
+        }
     }
 }
