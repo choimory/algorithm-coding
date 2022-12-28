@@ -1,11 +1,14 @@
 # 알고리즘 문제풀이
 
+- 채점 사이트: https://cote.inflearn.com/contest/10/problems
+
 ## String
 
 - 문자열 찾기
 - 대소문자 변환
 - 문장 속 가장 긴 단어 찾기
 - 단어 뒤집기
+- 중복 문자 제거
 
 ## Array
 
